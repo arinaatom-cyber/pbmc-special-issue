@@ -2,7 +2,7 @@
   const TYPES = [
     {
       id: "original-research",
-      name: "Original Research",
+      name: { ru: "Оригинальное исследование", en: "Original Research", zh: "原创研究", ar: "بحث أصيل" },
       purpose: {
         ru: "Полноформатные исследования с гипотезой, методами, результатами и обсуждением.",
         en: "Full-length studies with a hypothesis, methods, results and discussion.",
@@ -10,7 +10,7 @@
         ar: "بحوث كاملة بفرضية وطرائق ونتائج ومناقشة.",
       },
       structure: {
-        ru: "IMRaD",
+        ru: "Введение, методы, результаты, дискуссия и заключение",
         en: "IMRaD",
         zh: "IMRaD",
         ar: "IMRaD",
@@ -37,7 +37,7 @@
     },
     {
       id: "methods",
-      name: "Methods",
+      name: { ru: "Методы", en: "Methods", zh: "方法", ar: "طرائق" },
       purpose: {
         ru: "Новые или существенно усовершенствованные методы.",
         en: "New or substantially improved methods.",
@@ -45,10 +45,10 @@
         ar: "طرائق جديدة أو محسّنة جوهريًا.",
       },
       structure: {
-        ru: "Контекст → протокол → валидация",
-        en: "Context → protocol → validation",
-        zh: "背景 → 方案 → 验证",
-        ar: "سياق → بروتوكول → تحقق",
+        ru: "Контекст, протокол, валидация",
+        en: "Context, protocol, validation",
+        zh: "背景、方案、验证",
+        ar: "سياق، بروتوكول، تحقق",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: { ru: "рекомендуется", en: "recommended", zh: "建议提供", ar: "موصى بها" },
@@ -67,7 +67,7 @@
     },
     {
       id: "short-communications",
-      name: "Short Communications",
+      name: { ru: "Краткие сообщения", en: "Short Communications", zh: "简报", ar: "رسائل قصيرة" },
       purpose: {
         ru: "Краткие сообщения о значимых результатах.",
         en: "Short reports of significant findings.",
@@ -75,7 +75,7 @@
         ar: "رسائل موجزة عن نتائج ذات أهمية.",
       },
       structure: {
-        ru: "Краткий IMRaD",
+        ru: "Краткое введение, методы, результаты, дискуссия и заключение",
         en: "Short IMRaD",
         zh: "简短 IMRaD",
         ar: "IMRaD موجز",
@@ -92,7 +92,7 @@
     },
     {
       id: "reviews",
-      name: "Reviews",
+      name: { ru: "Обзоры", en: "Reviews", zh: "综述", ar: "مراجعات" },
       purpose: {
         ru: "Критические обзоры литературы.",
         en: "Critical literature reviews.",
@@ -122,7 +122,7 @@
     },
     {
       id: "systematic-reviews",
-      name: "Systematic Reviews",
+      name: { ru: "Систематические обзоры", en: "Systematic Reviews", zh: "系统综述", ar: "مراجعات منهجية" },
       purpose: {
         ru: "Систематические обзоры по протоколу.",
         en: "Protocol-based systematic reviews.",
@@ -152,7 +152,7 @@
     },
     {
       id: "meta-analyses",
-      name: "Meta-analyses",
+      name: { ru: "Метаанализы", en: "Meta-analyses", zh: "荟萃分析", ar: "تحليلات تلوية" },
       purpose: {
         ru: "Количественный синтез доказательств.",
         en: "Quantitative evidence synthesis.",
@@ -160,10 +160,10 @@
         ar: "تركيب كمّي للأدلة.",
       },
       structure: {
-        ru: "Протокол → методы → результаты",
-        en: "Protocol → methods → results",
-        zh: "方案 → 方法 → 结果",
-        ar: "بروتوكول → طرائق → نتائج",
+        ru: "Протокол, методы, результаты",
+        en: "Protocol, methods, results",
+        zh: "方案、方法、结果",
+        ar: "بروتوكول، طرائق، نتائج",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: {
@@ -182,7 +182,7 @@
     },
     {
       id: "perspectives",
-      name: "Perspectives",
+      name: { ru: "Перспективы", en: "Perspectives", zh: "观点", ar: "رؤى" },
       purpose: {
         ru: "Аналитические перспективы и позиции.",
         en: "Analytical perspectives and position pieces.",
@@ -217,7 +217,7 @@
     },
     {
       id: "data-notes",
-      name: "Data Notes",
+      name: { ru: "Заметки о данных", en: "Data Notes", zh: "数据简报", ar: "ملاحظات البيانات" },
       purpose: {
         ru: "Описание наборов данных.",
         en: "Descriptions of datasets.",
@@ -225,10 +225,10 @@
         ar: "وصف مجموعات البيانات.",
       },
       structure: {
-        ru: "Контекст → методы сбора → доступ",
-        en: "Context → collection methods → access",
-        zh: "背景 → 采集方法 → 获取",
-        ar: "سياق → طرائق الجمع → الوصول",
+        ru: "Контекст, методы сбора, доступ",
+        en: "Context, collection methods, access",
+        zh: "背景、采集方法、获取",
+        ar: "سياق، طرائق الجمع، الوصول",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: { ru: "обязательна", en: "required", zh: "必须提供", ar: "إلزامية" },
@@ -242,7 +242,7 @@
     },
     {
       id: "software-notes",
-      name: "Software Notes",
+      name: { ru: "Заметки о программном обеспечении", en: "Software Notes", zh: "软件简报", ar: "ملاحظات البرمجيات" },
       purpose: {
         ru: "Описание исследовательского ПО.",
         en: "Descriptions of research software.",
@@ -250,10 +250,10 @@
         ar: "وصف برمجيات البحث.",
       },
       structure: {
-        ru: "Назначение → архитектура → пример",
-        en: "Purpose → architecture → example",
-        zh: "用途 → 架构 → 示例",
-        ar: "الغرض → البنية → مثال",
+        ru: "Назначение, архитектура, пример",
+        en: "Purpose, architecture, example",
+        zh: "用途、架构、示例",
+        ar: "الغرض، البنية، مثال",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: {
@@ -272,7 +272,7 @@
     },
     {
       id: "database-articles",
-      name: "Database Articles",
+      name: { ru: "Статьи о базах данных", en: "Database Articles", zh: "数据库文章", ar: "مقالات قواعد البيانات" },
       purpose: {
         ru: "Описание биологических баз данных.",
         en: "Descriptions of biological databases.",
@@ -280,10 +280,10 @@
         ar: "وصف قواعد البيانات البيولوجية.",
       },
       structure: {
-        ru: "Содержание → курация → доступ",
-        en: "Content → curation → access",
-        zh: "内容 → 策展 → 获取",
-        ar: "المحتوى → التنسيق → الوصول",
+        ru: "Содержание, курация, доступ",
+        en: "Content, curation, access",
+        zh: "内容、策展、获取",
+        ar: "المحتوى، التنسيق، الوصول",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: {
@@ -307,7 +307,7 @@
     },
     {
       id: "negative-results",
-      name: "Negative Results",
+      name: { ru: "Отрицательные результаты", en: "Negative Results", zh: "阴性结果", ar: "نتائج سلبية" },
       purpose: {
         ru: "Методологически обоснованные отрицательные результаты.",
         en: "Methodologically sound negative results.",
@@ -315,10 +315,10 @@
         ar: "نتائج سلبية سليمة منهجيًا.",
       },
       structure: {
-        ru: "Гипотеза → мощность → результаты → ограничения",
-        en: "Hypothesis → power → results → limitations",
-        zh: "假设 → 效能 → 结果 → 局限",
-        ar: "فرضية → القوة → نتائج → قيود",
+        ru: "Гипотеза, мощность, результаты, ограничения",
+        en: "Hypothesis, power, results, limitations",
+        zh: "假设、效能、结果、局限",
+        ar: "فرضية، القوة، نتائج، قيود",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: { ru: "обязательна", en: "required", zh: "必须提供", ar: "إلزامية" },
@@ -332,7 +332,7 @@
     },
     {
       id: "null-findings",
-      name: "Null Findings",
+      name: { ru: "Нулевые результаты", en: "Null Findings", zh: "零结果", ar: "نتائج صفرية" },
       purpose: {
         ru: "Нулевые результаты с корректной статистической интерпретацией.",
         en: "Null findings with a correct statistical interpretation.",
@@ -340,10 +340,10 @@
         ar: "نتائج صفرية بتفسير إحصائي صحيح.",
       },
       structure: {
-        ru: "Гипотеза → анализ → интерпретация",
-        en: "Hypothesis → analysis → interpretation",
-        zh: "假设 → 分析 → 解释",
-        ar: "فرضية → تحليل → تفسير",
+        ru: "Гипотеза, анализ, интерпретация",
+        en: "Hypothesis, analysis, interpretation",
+        zh: "假设、分析、解释",
+        ar: "فرضية، تحليل، تفسير",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: { ru: "обязательна", en: "required", zh: "必须提供", ar: "إلزامية" },
@@ -357,7 +357,7 @@
     },
     {
       id: "replication-studies",
-      name: "Replication Studies",
+      name: { ru: "Репликационные исследования", en: "Replication Studies", zh: "重复研究", ar: "دراسات تكرار" },
       purpose: {
         ru: "Повторные исследования.",
         en: "Replication studies.",
@@ -365,10 +365,10 @@
         ar: "دراسات تكرار.",
       },
       structure: {
-        ru: "Исходная работа → протокол → сравнение",
-        en: "Original work → protocol → comparison",
-        zh: "原研究 → 方案 → 比较",
-        ar: "العمل الأصلي → بروتوكول → مقارنة",
+        ru: "Исходная работа, протокол, сравнение",
+        en: "Original work, protocol, comparison",
+        zh: "原研究、方案、比较",
+        ar: "العمل الأصلي، بروتوكول، مقارنة",
       },
       abstract: { ru: "да", en: "yes", zh: "是", ar: "نعم" },
       data: { ru: "обязательна", en: "required", zh: "必须提供", ar: "إلزامية" },
@@ -382,7 +382,7 @@
     },
     {
       id: "registered-reports",
-      name: "Registered Reports",
+      name: { ru: "Зарегистрированные отчёты", en: "Registered Reports", zh: "注册报告", ar: "تقارير مسجّلة" },
       purpose: {
         ru: "Протокол с рецензированием до сбора данных.",
         en: "Protocol peer-reviewed before data collection.",
@@ -390,7 +390,7 @@
         ar: "بروتوكول يُحكَّم قبل جمع البيانات.",
       },
       structure: {
-        ru: "Stage 1 / Stage 2",
+        ru: "Этап 1, этап 2",
         en: "Stage 1 / Stage 2",
         zh: "Stage 1 / Stage 2",
         ar: "المرحلة 1 / المرحلة 2",
@@ -407,7 +407,7 @@
     },
     {
       id: "protocols",
-      name: "Protocols",
+      name: { ru: "Протоколы", en: "Protocols", zh: "方案", ar: "بروتوكولات" },
       purpose: {
         ru: "Подробные экспериментальные или вычислительные протоколы.",
         en: "Detailed experimental or computational protocols.",
@@ -432,7 +432,7 @@
     },
     {
       id: "interviews",
-      name: "Interviews",
+      name: { ru: "Интервью", en: "Interviews", zh: "访谈", ar: "مقابلات" },
       purpose: {
         ru: "Интервью с исследователями.",
         en: "Interviews with researchers.",
@@ -440,10 +440,10 @@
         ar: "مقابلات مع الباحثين.",
       },
       structure: {
-        ru: "Введение → диалог",
-        en: "Introduction → dialogue",
-        zh: "引言 → 对话",
-        ar: "مقدمة → حوار",
+        ru: "Введение, диалог",
+        en: "Introduction, dialogue",
+        zh: "引言、对话",
+        ar: "مقدمة، حوار",
       },
       abstract: { ru: "краткая", en: "short", zh: "简短", ar: "موجز" },
       data: {
@@ -462,7 +462,7 @@
     },
     {
       id: "success-stories",
-      name: "Success Stories",
+      name: { ru: "Истории успеха", en: "Success Stories", zh: "成功故事", ar: "قصص نجاح" },
       purpose: {
         ru: "Истории развития научных проектов.",
         en: "Stories of scientific project development.",
@@ -470,10 +470,10 @@
         ar: "قصص تطور المشاريع العلمية.",
       },
       structure: {
-        ru: "Контекст → путь → уроки",
-        en: "Context → path → lessons",
-        zh: "背景 → 路径 → 经验",
-        ar: "سياق → مسار → دروس",
+        ru: "Контекст, путь, уроки",
+        en: "Context, path, lessons",
+        zh: "背景、路径、经验",
+        ar: "سياق، مسار، دروس",
       },
       abstract: { ru: "краткая", en: "short", zh: "简短", ar: "موجز" },
       data: {
@@ -492,7 +492,7 @@
     },
     {
       id: "editorials",
-      name: "Editorials",
+      name: { ru: "Редакционные статьи", en: "Editorials", zh: "社论", ar: "افتتاحيات" },
       purpose: {
         ru: "Редакционные материалы.",
         en: "Editorial pieces.",
@@ -517,7 +517,7 @@
     },
     {
       id: "corrections",
-      name: "Corrections",
+      name: { ru: "Исправления", en: "Corrections", zh: "更正", ar: "تصحيحات" },
       purpose: {
         ru: "Исправления к опубликованным статьям.",
         en: "Corrections to published articles.",
@@ -567,7 +567,7 @@
     root.innerHTML = TYPES.map((row) => {
       return `
         <article class="type-card" id="${row.id}">
-          <h2>${escapeHtml(row.name)}</h2>
+          <h2>${escapeHtml(loc(row.name))}</h2>
           <dl>
             <dt>${escapeHtml(t("type.field.purpose"))}</dt><dd>${escapeHtml(loc(row.purpose))}</dd>
             <dt>${escapeHtml(t("type.field.structure"))}</dt><dd>${escapeHtml(loc(row.structure))}</dd>
